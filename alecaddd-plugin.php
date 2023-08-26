@@ -9,7 +9,10 @@
 **/
 
 defined('ABSPATH') or die;
-
+if( file_exists(dirname(__FILE__). '/vendor/autoload.php')){
+    require_once dirname(__FILE__). '/vendor/autoload.php';
+}
+use Inc\Activate;
 class AleccadddPlugin
 {
     public $plugin_name;
@@ -37,8 +40,7 @@ class AleccadddPlugin
         require_once plugin_dir_path(__FILE__).'templates/admin.php';
     }
     function activate(){
-        $this->cpt();
-        flush_rewrite_rules();
+        Activate::activate();
     }
     function deactivate(){
         flush_rewrite_rules();

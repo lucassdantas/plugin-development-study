@@ -1,5 +1,5 @@
 <?php 
-
+namespace Inc;
 /*
 * @package $alecadddPlugin
 */

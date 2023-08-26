@@ -1,0 +1,16 @@
+{
+    "name": "lucas_dantas/alecaddd-plugin",
+    "description": "description",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Lucas Dantas",
+            "email": "lucasdantasprogramador@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload":{
+        "psr-4":{"Inc\\":"./inc"}
+    }
+}
